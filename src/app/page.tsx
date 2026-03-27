@@ -4,6 +4,7 @@ import Hero from '@/components/Hero'
 import ServicesBar from '@/components/ServicesBar'
 import Categories from '@/components/Categories'
 import FeaturedProducts from '@/components/FeaturedProducts'
+import PromoBand from '@/components/PromoBand'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <ServicesBar />
       <Categories />
+      <PromoBand />
       <FeaturedProducts />
     </main>
   )
