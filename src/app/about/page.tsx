@@ -3,6 +3,7 @@ import AnnouncementBar from '@/components/AnnouncementBar'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Newsletter from '@/components/Newsletter'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'About Us — Sophistipets',
@@ -140,24 +141,23 @@ export default function AboutPage() {
                 Adhiraj<br />Dasgupta
               </h2>
               {/* Founder avatar placeholder */}
-              <div
-                style={{
-                  width: '120px',
-                  height: '120px',
-                  borderRadius: '50%',
-                  background: 'var(--gold-pale)',
-                  border: '1px solid var(--gold-soft)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontFamily: 'var(--font-lora), serif',
-                  fontSize: '32px',
-                  color: 'var(--gold)',
-                  fontWeight: 400,
-                }}
-              >
-                AD
-              </div>
+            <div
+            style={{
+                width: '120px',
+                height: '120px',
+                borderRadius: '50%',
+                border: '1px solid var(--gold-soft)',
+                overflow: 'hidden',
+                position: 'relative',
+            }}
+            >
+            <Image
+                src="/adhiraj.jpg"
+                alt="Adhiraj Dasgupta"
+                fill
+                style={{ objectFit: 'cover', objectPosition: 'top' }}
+            />
+            </div>
               <p
                 style={{
                   fontSize: '12px',
