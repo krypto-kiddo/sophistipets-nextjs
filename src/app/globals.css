@@ -147,3 +147,39 @@ body {
   color: var(--gold);
   border-color: var(--gold-soft);
 }
+
+/* ServicesBar css */
+.svc-item {
+  padding: 28px 20px;
+  cursor: pointer;
+  transition: background 0.18s;
+  background: transparent;
+  border-right: 1px solid var(--border);
+}
+
+.svc-item:hover {
+  background: var(--gold-pale);
+}
+
+.svc-item.active {
+  background: var(--gold-pale);
+}
+
+.svc-icon-wrap {
+  width: 34px;
+  height: 34px;
+  background: var(--bg2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  transition: background 0.18s;
+  color: var(--text-2);
+}
+
+.svc-item:hover .svc-icon-wrap,
+.svc-item.active .svc-icon-wrap {
+  background: var(--gold-soft);
+  color: var(--gold);
+}
