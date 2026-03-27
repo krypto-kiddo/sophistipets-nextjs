@@ -1,26 +1,149 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg:         #FDFAF6;
+  --bg2:        #F7F2EA;
+  --bg3:        #F0E9DC;
+  --gold:       #B8912A;
+  --gold-soft:  #E8D5A3;
+  --gold-pale:  #FAF3E0;
+  --text:       #2E2A24;
+  --text-2:     #6B6357;
+  --text-3:     #A89E92;
+  --border:     #E6DDD0;
+  --white:      #FFFFFF;
+
+  --font-serif: var(--font-lora);
+  --font-sans:  var(--font-inter);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility classes that map to your design tokens */
+.font-serif  { font-family: var(--font-lora), serif; }
+.text-gold   { color: var(--gold); }
+.text-muted  { color: var(--text-2); }
+.text-faint  { color: var(--text-3); }
+.bg-surface  { background-color: var(--bg); }
+.bg-surface2 { background-color: var(--bg2); }
+.bg-surface3 { background-color: var(--bg3); }
+.bg-gold-pale { background-color: var(--gold-pale); }
+.border-default { border-color: var(--border); }
+
+/* Shared button styles */
+.btn-primary {
+  background: var(--gold);
+  color: var(--white);
+  border: none;
+  padding: 12px 26px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-family: var(--font-inter), sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.2s;
+  letter-spacing: 0.2px;
+  display: inline-block;
+}
+.btn-primary:hover { opacity: 0.88; }
+
+.btn-soft {
+  background: var(--bg2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 11px 26px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-family: var(--font-inter), sans-serif;
+  cursor: pointer;
+  font-weight: 400;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.btn-soft:hover { background: var(--bg3); }
+
+.btn-sm {
+  background: var(--gold);
+  color: var(--white);
+  border: none;
+  padding: 9px 20px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: var(--font-inter), sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+.btn-sm:hover { opacity: 0.88; }
+
+/* Section layout helpers */
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.sec {
+  padding: 64px 0;
+}
+
+.sh {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 36px;
+}
+
+.sh-label {
+  font-size: 10.5px;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.sh-title {
+  font-family: var(--font-lora), serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.sh-title em { font-style: italic; }
+
+.sh-link {
+  font-size: 12.5px;
+  color: var(--text-2);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1px;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+.sh-link:hover {
+  color: var(--gold);
+  border-color: var(--gold-soft);
 }
