@@ -2,6 +2,7 @@ import AnnouncementBar from '@/components/AnnouncementBar'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import ServicesBar from '@/components/ServicesBar'
+import Categories from '@/components/Categories'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar activePath="/" />
       <Hero />
       <ServicesBar />
+      <Categories />
     </main>
   )
 }
