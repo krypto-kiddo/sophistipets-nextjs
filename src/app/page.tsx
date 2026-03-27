@@ -7,6 +7,7 @@ import FeaturedProducts from '@/components/FeaturedProducts'
 import PromoBand from '@/components/PromoBand'
 import WhyUs from '@/components/WhyUs'
 import Brands from '@/components/Brands'
+import Newsletter from '@/components/Newsletter'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <FeaturedProducts />
       <WhyUs />
       <Brands />
+      <Newsletter />
     </main>
   )
 }
