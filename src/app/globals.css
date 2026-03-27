@@ -335,3 +335,9 @@ body {
   transition: opacity 0.2s;
 }
 .prod-add:hover { opacity: 0.85; }
+
+/* WhyUs */
+.why-card:hover {
+  border-color: var(--gold-soft) !important;
+  box-shadow: 0 4px 16px rgba(184,145,42,.08);
+}
