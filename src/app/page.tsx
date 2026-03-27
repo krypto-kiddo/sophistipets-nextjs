@@ -8,6 +8,7 @@ import PromoBand from '@/components/PromoBand'
 import WhyUs from '@/components/WhyUs'
 import Brands from '@/components/Brands'
 import Newsletter from '@/components/Newsletter'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <WhyUs />
       <Brands />
       <Newsletter />
+      <Footer />
     </main>
   )
 }
