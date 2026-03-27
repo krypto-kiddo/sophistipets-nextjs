@@ -34,7 +34,7 @@ export default function Navbar({ activePath = '/' }: { activePath?: string }) {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          height: '64px',
+          height: '72px',
         }}
       >
         {/* Logo */}
@@ -50,7 +50,7 @@ export default function Navbar({ activePath = '/' }: { activePath?: string }) {
             <span
               style={{
                 fontFamily: 'var(--font-lora), serif',
-                fontSize: '21px',
+                fontSize: '23px',
                 color: 'var(--text)',
                 letterSpacing: '0.3px',
               }}

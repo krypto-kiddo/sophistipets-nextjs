@@ -47,7 +47,7 @@ export default function Hero() {
         <h1
           style={{
             fontFamily: 'var(--font-lora), serif',
-            fontSize: '44px',
+            fontSize: '52px',
             lineHeight: 1.18,
             fontWeight: 400,
             color: 'var(--text)',

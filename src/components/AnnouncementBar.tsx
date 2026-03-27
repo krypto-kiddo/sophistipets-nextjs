@@ -4,7 +4,7 @@ export default function AnnouncementBar() {
       style={{
         background: 'var(--bg3)',
         color: 'var(--text-2)',
-        fontSize: '11.5px',
+        fontSize: '13px',
         textAlign: 'center',
         padding: '8px 16px',
         letterSpacing: '0.4px',
