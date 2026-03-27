@@ -6,6 +6,7 @@ import Categories from '@/components/Categories'
 import FeaturedProducts from '@/components/FeaturedProducts'
 import PromoBand from '@/components/PromoBand'
 import WhyUs from '@/components/WhyUs'
+import Brands from '@/components/Brands'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <PromoBand />
       <FeaturedProducts />
       <WhyUs />
+      <Brands />
     </main>
   )
 }

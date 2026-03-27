@@ -341,3 +341,29 @@ body {
   border-color: var(--gold-soft) !important;
   box-shadow: 0 4px 16px rgba(184,145,42,.08);
 }
+
+/* BRANDS */
+.brand-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 18px 10px 12px;
+  text-decoration: none;
+  transition: all 0.18s;
+}
+.brand-chip:hover {
+  border-color: var(--gold-soft);
+  background: var(--gold-pale);
+}
+.brand-chip-name {
+  font-size: 13px;
+  color: var(--text-2);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.brand-chip:hover .brand-chip-name {
+  color: var(--gold);
+}
