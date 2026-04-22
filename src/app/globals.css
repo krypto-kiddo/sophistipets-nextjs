@@ -440,3 +440,11 @@ body {
   background: var(--gold-pale);
   color: var(--gold);
 }
+
+
+/* VET CARE PAGE */
+
+.vet-service-card:hover {
+  border-color: var(--gold-soft) !important;
+  box-shadow: 0 4px 16px rgba(184,145,42,.08);
+}
