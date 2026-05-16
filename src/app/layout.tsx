@@ -3,6 +3,7 @@ import { Lora, Inter } from 'next/font/google'
 import './globals.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const lora = Lora({
   subsets: ['latin'],
@@ -49,7 +50,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${lora.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
+        {children}
+      </body>
     </html>
   )
 }
