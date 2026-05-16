@@ -20,6 +20,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://sophistipets.com'),
   title: 'Sophistipets — Care. Comfort. Quality for Your Pets.',
   description:
     "Kolkata's only full-service pet care centre. Advanced veterinary surgery, 24×7 emergency care, expert grooming, and 500+ premium products in Bhowanipore.",
@@ -32,8 +33,8 @@ export const metadata: Metadata = {
     'sophistipets',
   ],
   openGraph: {
-    title: 'Sophistipets',
-    description: "Kolkata's premier pet care destination",
+    title: 'Sophistipets — Care. Comfort. Quality for Your Pets.',
+    description: "Kolkata's only full-service pet care centre. Advanced veterinary surgery, 24×7 emergency care, expert grooming, and 500+ premium products in Bhowanipore.",
     url: 'https://sophistipets.com',
     siteName: 'Sophistipets',
     locale: 'en_IN',
